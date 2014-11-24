@@ -1,0 +1,2 @@
+XF86KbdBrightness{Down, Up}
+  kbdlight {down,up}

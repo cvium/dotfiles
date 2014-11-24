@@ -1,0 +1,16 @@
+! Fonts {{{
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.hintstyle: hintfull
+Xft.dpi:       220 
+! }}}
+Xcursor.size: 64
+urxvt.font:  xft:DejaVu Sans Mono:size=10
+URxvt*scrollBar: false
+URxvt*depth: 32
+URxvt*transparent: true
+URxvt*.shading: 50
+!URxvt*background: rgba:0000/0000/0000/cccc
+URxvt*termName: rxvt-unicode-256color
+URxvt*foreground: #ffffff
