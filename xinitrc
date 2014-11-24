@@ -14,6 +14,10 @@ xbindkeys
 #xrandr --output $monitor --mode 1440x900_60.00
 #exec xmonad
 gsettings set org.gnome.desktop.interface scaling-factor 2 
+
+# Gnome wants to control the cursor, I say no
+gsettings set org.gnome.settings-daemon.plugins.cursor active false
+
 #gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
 #exec xmonad
 exec gnome-session --session=xmonad

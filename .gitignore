@@ -7,3 +7,5 @@
 .virtual_env
 .hpc
 .hsenv
+xmonad-x86*
+*.errors
