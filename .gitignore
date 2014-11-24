@@ -1,0 +1,9 @@
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.virtual_env
+.hpc
+.hsenv
