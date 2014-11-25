@@ -1,3 +1,0 @@
-[GNOME Session]
-Name=GNOME/XMonad
-RequiredComponents=xmonad_ds;gnome-settings-daemon;notification-daemon

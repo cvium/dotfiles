@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Xmonad
-Exec=xmonad
-NoDisplay=true
-X-Gnome-WMName=XMonad
-X-Gnome-Autostart-Phase=WindowManager
-X-Gnome-Provides=windowmanager
