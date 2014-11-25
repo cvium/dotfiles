@@ -6,7 +6,7 @@ Xft.hintstyle: hintfull
 Xft.dpi:       110 
 ! }}}
 
-urxvt.font:  xft:DejaVu Sans Mono:size=8
+urxvt.font:  xft:DejaVu Sans Mono:size=10
 URxvt*scrollBar: false
 URxvt*depth: 32
 URxvt*transparent: true
