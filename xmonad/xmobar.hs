@@ -3,7 +3,7 @@
 -- Modifier: Cedric Fung (http://github.com/vec.io/.linux/xmonad)
 
 Config {
-    font = "xft:DejaVu Sans Mono:size=10:antialias=true",
+    font = "xft:DejaVu Sans Mono:size=8:antialias=true",
     bgColor = "#000000",
     fgColor = "#ffffff",
     position = Static { xpos = 0, ypos = 0, width = 2560, height = 32 },
