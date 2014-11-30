@@ -14,3 +14,4 @@ URxvt*.shading: 50
 !URxvt*background: rgba:0000/0000/0000/cccc
 URxvt*termName: rxvt-unicode-256color
 URxvt*foreground: #ffffff
+URxvt*background: #000000
