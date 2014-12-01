@@ -3,10 +3,11 @@
 -- Modifier: Cedric Fung (http://github.com/vec.io/.linux/xmonad)
 
 Config {
-    font = "xft:DejaVu Sans Mono:size=8:antialias=true",
+    font = "xft:DejaVu Sans Mono:size=10:antialias=true",
     bgColor = "#000000",
     fgColor = "#ffffff",
-    position = Static { xpos = 0, ypos = 0, width = 2560, height = 32 },
+    position = Top
+   -- position = Static { xpos = 0, ypos = 0, width = 2560, height = 32 },
     lowerOnStart = False,
     allDesktops = True,
     persistent = True,
@@ -19,9 +20,10 @@ Config {
         Run DynNetwork [] 10,
         Run Date "%a %b %_d %H:%M" "date" 10,
         Run Com "/home/claus/bin/getvolume.sh" [] "myVolume" 10,
+        Run Com "/usr/bin/iwgetid" ["wlp3s0", "-r"] "ssid" 10,
         Run StdinReader
     ],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader% }{ %dynnetwork%  %coretemp%  %battery% vol: %myVolume% <fc=#FFFFCC>%date%</fc>"
+    template = "%StdinReader% }{ (%ssid%) %dynnetwork%  %coretemp%  %battery% vol: %myVolume% <fc=#FFFFCC>%date%</fc>"
 }
