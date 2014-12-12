@@ -24,7 +24,7 @@ import XMonad.Hooks.SetWMName
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Hooks.DynamicLog
 import XMonad.Config.Gnome
-
+import XMonad.Hooks.UrgencyHook
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -314,12 +314,13 @@ myStartupHook = return ()
 --
 main = do
   xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
-  xmonad $ defaults {
+  xmonad $ withUrgencyHook NoUrgencyHook defaults {
     -- logHook = dynamicLog
      logHook = dynamicLogWithPP $ xmobarPP {
         ppOutput = hPutStrLn xmproc
       , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
       , ppHiddenNoWindows = xmobarColor "grey" ""
+      , ppUrgent = xmobarColor "#ff0000" "" . xmobarStrip
       -- , ppCurrent = xmobarColor xmobarCurrentWorkspaceColor ""
       -- , ppSep = "  "
       , ppLayout = const ""

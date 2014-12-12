@@ -49,12 +49,12 @@
     XF86KbdBrightnessDown 
 
 #ScreenUp
-"xbacklight -inc 1"
+"xbacklight -inc 3"
     m:0x0 + c:233
     XF86MonBrightnessUp 
 
 #ScreenDown
-"xbacklight -dec 1"
+"xbacklight -dec 3"
     m:0x0 + c:232
     XF86MonBrightnessDown 
 

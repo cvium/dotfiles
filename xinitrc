@@ -85,5 +85,6 @@ fi
 # Scale firefox depending on dpi
 sed -i -e 's/user_pref("layout.css.devPixelsPerPx.*/user_pref("layout.css.devPixelsPerPx", "'"$scale"'");/' ~/.mozilla/firefox/*.default/"$file".js
 
+/users/claus/xflux_bind &
 feh --bg-fill "$bg" &
 exec gnome-session --session=xmonad
